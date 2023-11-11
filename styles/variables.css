@@ -2,6 +2,17 @@
 
 :root {
   --main-text-color: #000;
+  --theme-main-color: #000;
+  --background-gradient: #d3d3d3;
+  --background-gradient-main: #e7e7e7;
+  --background-gradient-accent: #1a1a1a;
   --accent-font: 'Press Start 2P';
+  --main-font: 'Inter-Variable';
   --main-background-color: #fff;
+  --main-width: clamp(375px, 100%, 696px);
+  --font-weight-section-title: 700;
+  --font-weight-section-text: 400;
+  --text-stroke-color: #fff;
+  --text-size-small: 14px;
+  --text-size-large: 18px;
 }

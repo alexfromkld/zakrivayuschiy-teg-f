@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -16,7 +16,7 @@
   <body class="page">
     <header class="header">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__title-menu"></h2>
+      <h2 class="header__sub-title">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -43,31 +43,41 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section class="section__item">
-
+        <h3 class="section-title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h3>
+        <div class="container-image">
+          <img
+            class="section-image"
+            src="./images/image-0-sprint.png"
+            alt="дом на колёсах стоит на фоне ночного неба"
+          />
+          <span class="section-label">&lt;/HTML&gt;</span>
+        </div>
+        <div class="card__text-group">
+          <p class="section-text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p class="section-text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+        <div class="card__button-group">
+          <button class="card__icon-button"><img class="like-icon" src="./svg/heart.svg" alt="иконка сердца"></button>
+          <button class="card__like-button"><p class="button__text">Like</p></button>
+        </div>
       </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
-      <section class="section__item">
-
-      </section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
+      <section class="section__item"></section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
