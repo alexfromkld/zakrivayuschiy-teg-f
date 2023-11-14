@@ -106,8 +106,8 @@
   position: absolute;
   top: clamp(23px, 6.5vh, 27px);
   right: clamp(11px, 2vw, 25px);
-  font-size: 14px;
-  font-family: var(--accent-font);
+  font-size: var(--text-size-small);
+  font-family: var(--accent-font, sans-serif);
   opacity: .5;
   mix-blend-mode: hard-light;
 }
@@ -136,44 +136,155 @@
 .card__icon-button {
   background: none;
   border: none;
-  align-self: self-end;
+  align-self: flex-end;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.like-icon {
+  outline: 2px solid;
+}
+
+.like-icon:focus-visible {
+  border-color: var(--main-text-color);
 }
 
 .card__like-button {
-  background-color: transparent;
+  background-color: var(--main-background-color);
+  position: relative;
+  overflow: hidden;
   width: 130px;
+  z-index: 1;
   border: 2px solid var(--theme-main-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, sans-serif);
+  padding: 9px 17px;
+}
+
+.card__like-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-main-color);
+  z-index: 0;
+  transition: transform .5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transform: translateX(100%);
+}
+
+.card__like-button:hover {
+  cursor: pointer;
+}
+
+.card__like-button:focus {
+  outline: none;
+  box-shadow: 2px 2px var(--theme-main-color);
+}
+
+.card_like-button:active {
+  outline: none;
 }
 
 .button__text {
-  padding: 9px 17px;
   font-size: 14px;
+  position: relative;
+  color: var(--like-button-text);
+  mix-blend-mode: difference;
 }
 
-.footer {
+.footer__button {
   margin-inline: auto;
   margin-block-start: 54px;
+  position: relative;
+  overflow: hidden;
   margin-block-end: clamp(102px, calc(102px + 0.0666667 * (100vw - 375px)), 105px);
   padding: 10px;
   width: clamp(306px, 10.2vw + 225px, 335px);
   display: flex;
   gap: 8px;
+  z-index: 1;
   flex-wrap: wrap;
   border: 2px solid var(--theme-main-color);
   background-color: var(--main-background-color);
   align-items: center;
   justify-content: center;
   font-family: var(--accent-font, sans-serif);
-  font-size: 14px;
+  font-size: var(--text-size-small);
 }
 
-.footer .floppy {
-  width: clamp(21px, calc(28px + 0.014 * (100vw - 375px)), 28px); /*?????*/
+.footer__button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-main-color);
+  z-index: 0;
+  transition: transform .5s ease-in-out;
+}
+
+.footer__button:hover:before {
+  transform: translateX(100%);
+}
+
+.footer__button:hover {
+  cursor: pointer;
+}
+
+.footer__button:focus {
+  outline: none;
+  box-shadow: 2px 2px var(--theme-main-color);
+}
+
+.footer__button .floppy {
+  width: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px);
+  height: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px);
 }
 
 .footer__text {
-  
+  position: relative;
+  color: var(--like-button-text);
+  mix-blend-mode: difference;
+}
+
+.dialog-window {
+  font-family: var(--accent-font, sans-serif);
+  font-size: var(--text-size-small);
+  line-height: 1.5;
+  text-transform: uppercase;
+  width: clamp(341px, calc(0.0314286 * (100vw) + 326.714px), 357px);
+  padding: 30px;
+}
+
+.dialog-window::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+} 
+
+.dialog__content-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.dialog__floppy {
+  width: 39px;
+  height: 39px;
+}
+
+.button__dialog-window {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--theme-main-color);
+  text-transform: uppercase;
+  padding: 9px 17px;
 }
 
 @media (width <= 375px) {

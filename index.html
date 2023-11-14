@@ -71,11 +71,11 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
-      <section class="section__item">
+      <!-- <section class="section__item">
         <h3 class="section-title">1 спринт: Я — чистый лист</h3>
         <div class="container-image">
           <img
@@ -102,7 +102,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -131,7 +131,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -162,7 +162,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -194,7 +194,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -223,7 +223,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -254,7 +254,7 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </section>
@@ -287,13 +287,12 @@
             <img class="like-icon" src="./svg/heart.svg" alt="иконка сердца" />
           </button>
           <button class="card__like-button">
-            <p class="button__text">Like</p>
+            <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
-      <!-- <img class="footer__image" src="./svg/floppy.svg" alt="иконка дискеты"> -->
+    <button class="footer__button" onClick="window['dialog-window'].showModal();">
       <svg
         class="floppy"
         width="28"
@@ -305,7 +304,27 @@
         <use href="./svg/floppy.svg#svg-floppy"></use>
       </svg>
       <span class="footer__text">Сохранить на память</span>
-    </footer>
+    </button>
+    <dialog class="dialog-window" id="dialog-window">
+      <div class="dialog__content-group">
+        <svg
+        class="dialog__floppy"
+        width="280"
+        height="280"
+        viewBox="0 0 28 28"
+        fill="currentColor"
+        stroke="currentColor"
+      >
+        <use href="./svg/floppy.svg#svg-floppy"></use>
+      </svg>
+      <p>
+        Вставьте<br>
+        дискету, чтобы<br> 
+        продолжить
+      </p>
+      </div>
+      <button class="button__dialog-window" onclick="window['dialog-window'].close();">ok</button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
