@@ -16,4 +16,6 @@
   --text-size-small: 14px;
   --text-size-large: 18px;
   --like-button-text: #fff;
+  --heart-contour: #000;
+  --heart-fill: #FF0000;
 }

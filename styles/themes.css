@@ -4,3 +4,87 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-color: #00CC14;
+    --theme-main-color: #00CC14;
+    --background-gradient: #000;
+    --background-gradient-main: #007f0c;
+    --background-gradient-accent: #004306;
+    --main-background-color: #000;
+    --font-weight-section-title: 785;
+    --font-weight-section-text: 465;
+    --text-stroke-color: #000;
+    --like-button-text: #00CC14;
+    --heart-contour: #00CC14;
+    --heart-fill: #FF0000;
+    --accent-font: 'Press Start 2P';
+    --main-font: 'Inter-Variable';
+    --main-width: clamp(375px, 100%, 696px);
+    --text-size-small: 14px;
+    --text-size-large: 18px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text-color: #000;
+    --theme-main-color: #000;
+    --background-gradient: #d3d3d3;
+    --background-gradient-main: #e7e7e7;
+    --background-gradient-accent: #1a1a1a;
+    --accent-font: 'Press Start 2P';
+    --main-font: 'Inter-Variable';
+    --main-background-color: #fff;
+    --main-width: clamp(375px, 100%, 696px);
+    --font-weight-section-title: 700;
+    --font-weight-section-text: 400;
+    --text-stroke-color: #fff;
+    --text-size-small: 14px;
+    --text-size-large: 18px;
+    --like-button-text: #fff;
+    --heart-contour: #000;
+    --heart-fill: #FF0000;
+  }
+}
+
+:root.theme-dark{
+  --main-text-color: #00CC14;
+  --theme-main-color: #00CC14;
+  --background-gradient: #000;
+  --background-gradient-main: #007f0c;
+  --background-gradient-accent: #004306;
+  --main-background-color: #000;
+  --font-weight-section-title: 785;
+  --font-weight-section-text: 465;
+  --text-stroke-color: #000;
+  --like-button-text: #00CC14;
+  --heart-contour: #00CC14;
+  --heart-fill: #FF0000;
+  --accent-font: 'Press Start 2P';
+  --main-font: 'Inter-Variable';
+  --main-width: clamp(375px, 100%, 696px);
+  --text-size-small: 14px;
+  --text-size-large: 18px;
+}
+
+:root.theme-light {
+  --main-text-color: #000;
+  --theme-main-color: #000;
+  --background-gradient: #d3d3d3;
+  --background-gradient-main: #e7e7e7;
+  --background-gradient-accent: #1a1a1a;
+  --accent-font: 'Press Start 2P';
+  --main-font: 'Inter-Variable';
+  --main-background-color: #fff;
+  --main-width: clamp(375px, 100%, 696px);
+  --font-weight-section-title: 700;
+  --font-weight-section-text: 400;
+  --text-stroke-color: #fff;
+  --text-size-small: 14px;
+  --text-size-large: 18px;
+  --like-button-text: #fff;
+  --heart-contour: #000;
+  --heart-fill: #FF0000;
+}
