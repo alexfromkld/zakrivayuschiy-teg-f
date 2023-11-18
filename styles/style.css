@@ -171,13 +171,14 @@
   margin: 25px;
   gap: 6px;
   justify-content: flex-end;
+  height: 38px;
 }
 
 .card__icon-button {
   background: none;
   border: 2px solid transparent;
   padding-block-start: 7px;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .card__icon-button:focus-visible {
@@ -285,8 +286,10 @@
 }
 
 .footer__button .floppy {
-  width: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px);
-  height: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px);
+  /* width: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px);
+  height: clamp(28px, calc(21px + 0.014 * (100vw - 375px)), 21px); */
+  mix-blend-mode: difference;
+  stroke: var(--main-background-color);
 }
 
 .footer__text {
@@ -337,5 +340,12 @@
 
   .section__item {
     width: 100%;
+  }
+}
+
+@media (width > 375px) {
+  .footer__button .floppy {
+    width: 21px;
+    height: 21px;
   }
 }
