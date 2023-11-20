@@ -105,15 +105,16 @@
 .theme-menu__button::after {
   content: '';
   display: block;
-  width: 0%;
   height: 2px;
   background-color: var(--main-text-color);
   opacity: .6;
-  transition: width .3s;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s;
 }
 
 .theme-menu__button:focus-visible::after {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .main {
@@ -143,6 +144,38 @@
 
 .section-image {
   width: 100%;
+}
+
+.section__item:nth-child(1) .container-image .section-image {
+  filter: brightness(1.6);
+}
+
+.section__item:nth-child(2) .container-image .section-image {
+  filter: contrast(.4);
+}
+
+.section__item:nth-child(3) .container-image .section-image {
+  filter: blur(2px);
+}
+
+.section__item:nth-child(4) .container-image .section-image {
+  filter: opacity(.4);
+}
+
+.section__item:nth-child(5) .container-image .section-image {
+  filter: grayscale(1);
+}
+
+.section__item:nth-child(6) .container-image .section-image {
+  filter: saturate(150%);
+}
+
+.section__item:nth-child(7) .container-image .section-image {
+  filter: sepia(.9);
+}
+
+.section__item:nth-child(8) .container-image .section-image {
+  filter: opacity(.6) invert(.2) brightness(150%);
 }
 
 .section-label {
@@ -185,10 +218,11 @@
   align-self: center;
   padding: 0;
   height: 100%;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--theme-main-color);
+  border: 2px solid var(--theme-main-color);
 }
 
 .card__icon-button:focus {
