@@ -45,6 +45,7 @@
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-block-start: clamp(120px, 22.2222vw, 136px);
   margin-block-end: 20px;
+  display: block;
 }
 
 .header__sub-title {
@@ -164,6 +165,7 @@
   flex-direction: column;
   gap: 27px;
   margin: 25px;
+  font-weight: var(--font-weight-section-text);
 }
 
 .card__button-group {
@@ -323,6 +325,10 @@
 .dialog__floppy {
   width: 39px;
   height: 39px;
+}
+
+.modal__text {
+  max-width: 198px;
 }
 
 .button__dialog-window {
