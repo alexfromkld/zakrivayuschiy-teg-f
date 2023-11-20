@@ -24,6 +24,8 @@
     --main-width: clamp(375px, 100%, 696px);
     --text-size-small: 14px;
     --text-size-large: 18px;
+    --variation-font-normal: 465;
+    --variation-font-bold: 785;
   }
 }
 
@@ -46,6 +48,8 @@
     --like-button-text: #fff;
     --heart-contour: #000;
     --heart-fill: #FF0000;
+    --variation-font-normal: 400;
+    --variation-font-bold: 700;
   }
 }
 
@@ -67,6 +71,8 @@
   --main-width: clamp(375px, 100%, 696px);
   --text-size-small: 14px;
   --text-size-large: 18px;
+  --variation-font-normal: 465;
+  --variation-font-bold: 785;
 }
 
 :root.theme-light {
@@ -87,4 +93,6 @@
   --like-button-text: #fff;
   --heart-contour: #000;
   --heart-fill: #FF0000;
+  --variation-font-normal: 400;
+  --variation-font-bold: 700;
 }
