@@ -1,4 +1,4 @@
 https://github.com/alexfromkld/zakrivayuschiy-teg-f
+https://alexfromkld.github.io/zakrivayuschiy-teg-f/
 
-<!-- по заданию нужно приложить ссылку на проект, а не на Github pages
-автотесты не пропускают другие ссылки -->
+<!-- у меня было выложено, тесты не пропускают -->
